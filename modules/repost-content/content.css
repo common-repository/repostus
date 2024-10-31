@@ -1,0 +1,279 @@
+/*
+ * CSS fo feeds
+ */
+
+.repost-content-section-wrap {
+    max-width: 950px;
+    padding-right:10px;
+}
+
+.repost-content-feed {
+    max-width: 700px;
+}
+
+.repost-content-article-result {
+    clear: both;
+    min-height: 60px;
+}
+
+.repost-content-article-image  {
+    float: left; 
+    padding: 0 10px 10px 0 ;
+    margin: 0;
+    border: 0;
+    width: 100px;
+    height: 65px;
+}
+
+.repost-content-article-image img {
+    display: block;
+    padding: 0 0px 0 0 ;
+    margin: 0 auto;
+    border: 0;
+}
+
+.repost-content-article-content {
+    margin-left: 110px;
+}
+
+.repost-content-article-excerpt {
+    display: block;
+    padding-bottom: 10px;
+    
+}
+
+#repost-content-preview {
+    border: 1px solid #ff6600;
+    padding: 10px;
+    width: 600px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 8px 2px #ff6600;
+    box-shadow: 0px 0px 8px 2px #ff6600;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    min-height: 600px;
+    background: white;
+    display: none;
+    z-index: 10;
+}
+
+#repost-content-title-input {
+    margin: 10px 0;
+    padding: 3px 8px;
+    font-size: 1.3em;
+    line-height: 100%;
+    width: 100%;
+    outline: 0;
+}
+
+#repost-content-save-search {
+    border: 1px solid #ff6600;
+    padding: 10px;
+    width: 400px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 8px 2px #ff6600;
+    box-shadow: 0px 0px 8px 2px #ff6600;
+    position: absolute;
+    top: 160px;
+    left: 60px;
+    min-height: 100px;
+    background: white;
+    display: none;
+    z-index: 10;
+}
+
+#repost-content-save-search-name {
+    margin: 10px 0;
+    padding: 3px 8px;
+    font-size: 1.3em;
+    line-height: 100%;
+    width: 300px;;
+    clear: both;
+    outline: 0;
+}
+
+#repost-content-save-search-cancel {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#repost-content-preview-message {
+    border: 1px solid #ff6600;
+    padding: 30px;
+    width: 300px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 8px 2px #ff6600;
+    box-shadow: 0px 0px 8px 2px #ff6600;
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    background: white;
+    display: none;
+    z-index: 10;
+    text-align: center;
+    font-size: 1.7em;
+    opacity: 0.9;
+    margin: 0;
+}
+
+#repost-content-mask {
+    width:5000px;
+    height: 5000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0.2;
+    background: black;
+    z-index: 8;
+}
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.repost-content-loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.repost-content-loading #repost-content-mask, 
+body.repost-content-loading #repost-content-preview-message  {
+    display: block;
+}
+
+.repost-content-more-wrap {
+    text-align: right;
+}
+
+.repost-content-left {
+    float: left;
+    margin-right: 5px!important;
+}
+.repost-content-right {
+    float: right;
+    margin-left: 5px!important;
+}
+
+.repost-content-edit-button a {
+    color: red;
+}
+
+.repost-content-loader-gif {
+    border: none;
+    padding: 0 0 0 5px;
+}
+
+.repost-content-newcount {
+    font-size: 0.6em;
+    color: #a0a0a0;
+}
+
+.repost-content-new:after {
+    content: ' new';
+    color: #ff6600;
+    vertical-align: super;
+    font-size: 70%;
+}
+
+
+/**
+ * Show hide magic
+ **/
+
+
+.repost-content-itemlist-count,
+.repost-content-feed-hide .repost-content-itemlist-dash, 
+.repost-content-feed-hide .repost-content-newcount,
+.repost-content-feed-hide .repost-content-itemlist {
+    display: none ;
+}
+
+.repost-content-feed-hide .repost-content-itemlist-count {
+    display: inline;
+}
+
+
+/**
+ * Dashboard widget stuff
+ **/
+
+.repost-content-widget-search {
+    text-align: right;
+    font-weight: bold;
+}
+
+.repost-content-widget-feed {
+    width: 80%;
+    
+}
+
+.repost-content-widget-feed a {
+    font-weight: bold;
+}
+
+.repost-content-widget-feed a.repost-content-widget-feed-idle {
+    color: #aaa;
+}
+
+.repost-content-widget-feed-count {
+    color:#aaa;
+    margin-left: 5px;
+    width: 10%;
+    text-align: center;
+}
+
+#adminmenu .wp-menu-image img {
+	padding: 4px 2px 0 5px;
+}
+
+
+/**
+ * Search tag
+ **/
+.repost-content-add-search-submit {
+   
+}
+    
+
+.repost-content-add-search {
+    width: 400px;
+    margin-right: 10px;
+    
+}
+
+.repost-content-refine {
+    float: right;
+}
+
+.repost-content-refine-search {
+    margin: 0 0 15px 0;
+    display: none;
+}
+
+.repost-content-refine-show .repost-content-refine-search {
+    display: block;
+}
+
+.repost-content-feed-hide .repost-content-refine-search {
+    display: none;
+}
+
+/**
+ * Divider
+ **/
+.repost-content-divider {
+    background:#ddd;color:#ddd;clear:both;float:none;width:85%;height:1px;margin:0 0 1.45em;border:none;
+}
+
+
+.repost-content-beta-flash {
+    padding: 0 10px;
+    color: #ff6600;
+    
+}
